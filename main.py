@@ -14,7 +14,8 @@ for g in [value for value in sayilar if value not in [0]]:
                                           gerald = (100000 * g) + (10000 * e) + (1000 * r) + (100 * a) + (10 * l) + d
                                           donald = (100000 * d) + (10000 * o) + (1000 * n) + (100 * a) + (10 * l) + d
                                           robert = (100000 * r) + (10000 * o) + (1000 * b) + (100 * e) + (10 * r) + t
-                                          if (gerald + donald == robert and len(set([g,e,r,a,l,d,o,n,b,t])) == 10):
+                                          if(len(set([g,e,r,a,l,d,o,n,b,t])) == 10):
+                                            if (gerald + donald == robert): 
                                               print("Gerald:", gerald)
                                               print("Donald:", donald)
                                               print("Robert:", robert)
